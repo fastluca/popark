@@ -13,5 +13,5 @@ jobs:
       with:
         ftp-server: ftp.alessandrobortoletto.com
         ftp-username: 10747798@aruba.it
-        ftp-password: Ct9dsic2Rd4fP
-        local-dir: www.alessandrobortoletto.com/deploy/
+        ftp-password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: root/www.alessandrobortoletto.com/deploy
