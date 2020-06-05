@@ -1,3 +1,4 @@
+.git-ftp-ignore
 scss/*
 prepros.config
 single.html
