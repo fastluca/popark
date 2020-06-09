@@ -11,6 +11,6 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
-        ftp-server: ftp://ftp.alessandrobortoletto.com/www.alessandrobortoletto.com/pop2/
+        ftp-server: ftp://ftp.popark.it/www.popark.it/
         ftp-username: 10747798@aruba.it
         ftp-password: ${{ secrets.FTP_PASSWORD }}
