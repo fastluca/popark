@@ -12,7 +12,18 @@ jobs:
         npm install --save-dev gulp-sitemap
         npm install --save-dev gulp
         npm install --global gulp-cli
-    - run: gulp sitemap
+        gulp sitemap
+    - name: Commit files # commit the output folder
+      run: |
+          git config --local user.email "test@github.com"
+          git config --local user.name "GitHub Action test"
+          git add ./sitemap.xml
+          git commit -m "Add changes"
+    - name: Push changes # push the output folder to your repo
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        force: true  
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
