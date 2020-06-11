@@ -1,7 +1,7 @@
 on: push
 name: Publish Website
 jobs:
-  Sitemap generator:
+  Sitemap-generator:
     name: Sitemap generator
     runs-on: ubuntu-latest
     steps:
