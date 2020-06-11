@@ -5,6 +5,12 @@ jobs:
     name: FTP-Deploy-Action
     runs-on: ubuntu-latest
     steps:
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v1.4.2
+    - run: npm install --save-dev gulp-sitemap
+    - run: npm install --save-dev gulp
+    - run: npm install --global gulp-cli
+    - run: gulp sitemap
     - uses: actions/checkout@v2.1.0
       with:
         fetch-depth: 2
