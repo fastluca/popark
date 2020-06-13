@@ -72,8 +72,20 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       #dd6b4d !default;
+/*
+$primary:       #f7931e !default;
 $secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+*/
+
+// NEW PALETTE AS PER LOGO
+$primary:       #f7931e !default;
+$secondary:     $gray-900 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;

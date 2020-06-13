@@ -5,10 +5,19 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+/*
+$primary:       #f7931e !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+*/
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 html {
@@ -21,7 +30,6 @@ html {
 
 @-ms-viewport {
   width: device-width; }
-
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
@@ -39,7 +47,6 @@ body {
   outline: 0 !important; }
 
 hr {
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
   overflow: visible; }
@@ -55,7 +62,6 @@ p {
 abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   cursor: help;
   border-bottom: 0; }
@@ -111,12 +117,12 @@ sup {
   top: -.5em; }
 
 a {
-  color: #dd6b4d;
+  color: #f7931e;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
   a:hover {
-    color: #ba4324;
+    color: #c26c07;
     text-decoration: underline; }
 
 a:not([href]):not([tabindex]) {
@@ -209,7 +215,6 @@ button::-moz-focus-inner,
 
 input[type="radio"],
 input[type="checkbox"] {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0; }
 
@@ -271,3 +276,5 @@ template {
 
 [hidden] {
   display: none !important; }
+
+/*# sourceMappingURL=bootstrap-reboot.css.map */
