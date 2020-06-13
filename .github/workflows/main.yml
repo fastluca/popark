@@ -22,12 +22,13 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        force: true  
+        force: true
+        branch: deploy_branch   
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
         ftp-server: ftp://ftp.popark.it/www.popark.it/
         ftp-username: 10747798@aruba.it
         ftp-password: ${{ secrets.FTP_PASSWORD }}
-        #git-ftp-args: --branch deploy_branch 
+        git-ftp-args: --branch=deploy_branch 
 
