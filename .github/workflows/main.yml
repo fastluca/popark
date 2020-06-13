@@ -9,16 +9,17 @@ jobs:
     - name: Setup Node.js environment
       uses: actions/setup-node@v1.4.2
     - run: | 
+        git config --local user.email "test@github.com"
+        git config --local user.name "GitHub Action test"
+        git switch -c deploy_branch
         npm install --save-dev gulp-sitemap
         npm install --save-dev gulp
         npm install --global gulp-cli
         gulp sitemap
-    - name: Commit files # commit the output folder
-      run: |
-          git config --local user.email "test@github.com"
-          git config --local user.name "GitHub Action test"
-          git add --force ./sitemap.xml
-          git commit -m "Sitemap Update"
+        git add --force ./sitemap.xml
+        git commit -m "Sitemap Update"
+        git add --force ./sitemap.xml
+        git commit -m "Sitemap Update"
     - name: Push changes # push the output folder to your repo
       uses: ad-m/github-push-action@master
       with:
@@ -30,4 +31,5 @@ jobs:
         ftp-server: ftp://ftp.popark.it/www.popark.it/
         ftp-username: 10747798@aruba.it
         ftp-password: ${{ secrets.FTP_PASSWORD }}
+        git-ftp-args: --branch deploy_branch 
 
