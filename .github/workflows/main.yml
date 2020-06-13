@@ -29,5 +29,5 @@ jobs:
         ftp-server: ftp://ftp.popark.it/www.popark.it/
         ftp-username: 10747798@aruba.it
         ftp-password: ${{ secrets.FTP_PASSWORD }}
-        git-ftp-args: --branch deploy_branch 
+        #git-ftp-args: --branch deploy_branch 
 
