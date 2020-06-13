@@ -623,7 +623,7 @@
         <div class="row">
           <div class="col-lg-4 offset-lg-4 mb-4 text-center">
             <p><em>Lascia la tua mail per una offerta esclusiva.</em></p>
-            <form action="https://formspree.io/mqkyblod" method="POST">
+            <form class="needs-validation" novalidate action="https://formspree.io/mqkyblod" method="POST">
 
               <!--
               <div class="form-group row">
@@ -638,13 +638,13 @@
 
               <div class="form-group row">
                 <div class="col-md-12">
-                  <input type="text" class="form-control" placeholder="Il tuo nome" name="name">
+                  <input type="text" class="form-control" placeholder="Il tuo nome" name="name" required>
                 </div>
               </div>
 
               <div class="form-group row">
                 <div class="col-md-12">
-                  <input type="text" class="form-control" placeholder="La tua email" name="_replyto">
+                  <input type="email" class="form-control" placeholder="La tua email" name="_replyto" required>
                 </div>
               </div>
 
@@ -787,6 +787,27 @@
       </div>
     </div>
   </div>
+
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
 
 
   <script src="js/jquery-3.3.1.min.js"></script>
