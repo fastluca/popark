@@ -18,8 +18,6 @@ jobs:
         gulp sitemap
         git add --force ./sitemap.xml
         git commit -m "Sitemap Update"
-        git add --force ./sitemap.xml
-        git commit -m "Sitemap Update"
     - name: Push changes # push the output folder to your repo
       uses: ad-m/github-push-action@master
       with:
