@@ -1,5 +1,5 @@
-$primary: #f7931e;
-$secondary: #115268;
+$primary: #f18429;
+$secondary: #1a4980;
 
 .site-section-cover {
 	&.overlay {
@@ -8,6 +8,23 @@ $secondary: #115268;
 		}
     }
 }
+
+.btn-primary {
+	background-color: $primary;
+	border-color: $primary;
+}
+
+strong {
+	color: $secondary;
+}
+
+/*.sticky-wrapper .site-navbar {
+	background: transparent !important;
+}
+
+.sticky-wrapper.is-sticky .site-navbar {
+	background: $secondary !important;
+}*/
 
 
 @import "bootstrap/functions";
@@ -20,5 +37,9 @@ $secondary: #115268;
 @import "site-navbar";
 /* Blocks */
 @import "site-blocks";
+
+.site-navbar .site-navigation .site-menu > li > a {
+	color: $secondary !important;
+}
 
 
