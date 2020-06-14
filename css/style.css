@@ -8,6 +8,10 @@
   border-color: #f18429;
 }
 
+.bg-primary {
+  background-color: #f18429 !important;
+}
+
 strong {
   color: #1a4980;
 }
