@@ -1428,3 +1428,11 @@ h1, h2, h3, h4, h5,
 .site-navbar .site-navigation .site-menu > li > a {
   color: #1a4980 !important;
 }
+
+.sticky-wrapper.is-sticky .site-navbar ul li a {
+  color: #1a4980 !important;
+}
+
+.text-black {
+  color: #1a4980 !important;
+}
