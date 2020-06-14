@@ -680,7 +680,7 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-5 offset-lg-4 mb-4 text-center">
+          <div class="col-lg-4 offset-lg-4 mb-4 text-center">
             <p><em>Lascia la tua mail per una offerta esclusiva.</em></p>
             <form id="contact-form" action="https://formspree.io/mqkyblod" method="POST">
 
@@ -707,19 +707,17 @@
                 </div>
               </div>
 
-              <div class="form-group row">
-                <div class="form-check form-check-inline">
-                  <div class="col-1">
-                    <input type="checkbox" class="form-check-input form-control" name="consent" id="consent" required
+              <div class="form-group row text-left">
+                <div class="col-md-12 form-check form-check-inline" style="padding-left: 12px;">
+                    <input type="checkbox" class="form-check-input" name="consent" id="consent" required
                       aria-labelledby="checkbox9-help" />
-                  </div>
-                  <div class="col-11">
-                    <small id="checkbox9-help" class="form-text">Accetto che Popark mi contatti all'indirizzo email
-                      fornito</small>
-                  </div>
+                    <label class="form-check-label" for="consent">
+                      Accetto che Popark mi contatti all'indirizzo email fornito
+                    </label>
+                  <!-- <small id="checkbox9-help" class="form-text">Accetto che Popark mi contatti all'indirizzo email
+                      fornito</small>-->
                 </div>
               </div>
-
               <!--
                 <div class="form-group row">
                   <div class="col-md-12">
@@ -853,7 +851,7 @@
         // Fetch all the forms we want to apply custom Bootstrap validation styles to
         var form = document.getElementById('contact-form');
 
-        form.querySelectorAll('.form-control').forEach(input => {
+        form.querySelectorAll('.form-control, .form-check-input').forEach(input => {
           input.addEventListener(('input'), () => {
             if (input.checkValidity()) {
               input.classList.remove('is-invalid')
