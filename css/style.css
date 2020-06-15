@@ -765,7 +765,8 @@ h1, h2, h3, h4, h5,
     padding: 2em 0; }
   .site-section-cover.img-bg-section {
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-position: center right; }
   .site-section-cover h1 {
     font-size: 4.5rem;
     color: #fff;
