@@ -21,15 +21,15 @@ strong {
 }
 
 .no-webp .cover {
-  background-image: url("../images/Torino_Piazza_Castello.jpg");
+  background-image: url("../images/Torino_Piazza_Castello.jpg") !important;
 }
 
 .webp .cover {
-  background-image: url("../images/Torino_Piazza_Castello.webp");
+  background-image: url("../images/Torino_Piazza_Castello.webp") !important;
 }
 
 .no-js .cover {
-  background-image: url("../images/Torino_Piazza_Castello.jpg");
+  background-image: url("../images/Torino_Piazza_Castello.jpg") !important;
 }
 
 /*.sticky-wrapper .site-navbar {
