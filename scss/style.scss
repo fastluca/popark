@@ -26,6 +26,18 @@ strong {
 	color: $secondary;
 }
 
+.no-webp .cover {
+	background-image: url("../images/Torino_Piazza_Castello.jpg");
+  }
+  
+  .webp .cover{
+	background-image: url("../images/Torino_Piazza_Castello.webp");
+  }
+
+  .no-js .cover {
+	background-image: url("../images/Torino_Piazza_Castello.jpg");
+  }
+
 /*.sticky-wrapper .site-navbar {
 	background: transparent !important;
 }

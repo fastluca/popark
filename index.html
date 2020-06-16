@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" class="no-js">
 
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -10,6 +10,9 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-169329993-1');
+  </script>
+  <script>
+    document.documentElement.classList.remove("no-js");
   </script>
 
   <link rel="icon" type="image/png" href="images/favicon_nolabel.png">
@@ -92,8 +95,7 @@
 
 
 
-    <div class="site-section-cover overlay img-bg-section"
-      style="background-image: url('images/Torino_Piazza_Castello.webp'); ">
+    <div class="site-section-cover overlay img-bg-section cover">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-12 col-lg-7">
@@ -979,6 +981,7 @@ alt="Parcheggia in Popark">
   <script src="js/aos.js"></script>
 
   <script src="js/main.js"></script>
+  <script src="js/modernizr-custom.js" async></script>
 
 </body>
 
